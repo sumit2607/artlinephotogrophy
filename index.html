@@ -242,6 +242,19 @@
             letter-spacing: 0.05em;
             color: var(--gold);
             text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+            /* Adjust height as needed */
+            width: auto;
+            object-fit: contain;
+        }
+
+        .red-letter {
+            color: var(--brand-red);
         }
 
         .nav-links {
@@ -334,7 +347,7 @@
             background-position: center;
             opacity: 0;
             transition: opacity 1.5s ease-in-out;
-            filter: brightness(0.4) contrast(1.1);
+            filter: brightness(0.7) contrast(1.1);
             transform: scale(1.05);
             animation: slowZoom 20s infinite alternate;
         }
@@ -675,6 +688,20 @@
             position: relative;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
             /* Subtle shadow for lift */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .client-photo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--gold);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
 
         .stars {
@@ -1098,7 +1125,9 @@
     <header id="navbar">
         <div class="container">
             <nav>
-                <div class="logo">Artline Studio</div>
+                <div class="logo">
+                    <img src="assets/images/logo_banner.jpg" alt="Artline Studio Logo">
+                </div>
                 <div class="menu-toggle" id="mobile-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -1125,9 +1154,9 @@
             <div class="hero-slide" style="background-image: url('assets/images/hero_4.jpg')"></div>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">Artline Studio</h1>
+            <h1 class="hero-title">Art<span class="red-letter">l</span>ine Studio</h1>
             <h2 class="hero-subtitle">Premium Photography & Cinematography</h2>
-            <p class="hero-desc">We capture emotions, stories, and timeless frames for generations to cherish.</p>
+            <p class="hero-desc">Your Story. Captured Beautifully.</p>
             <div class="hero-buttons">
                 <a onclick="openWhatsApp()" class="btn btn-primary">Book on WhatsApp</a>
                 <a href="#work" class="btn btn-secondary">View Our Work</a>
@@ -1305,27 +1334,48 @@
             <div class="testimonials-grid">
                 <!-- Review 1 -->
                 <div class="testimonial-card animate-on-scroll">
+                    <img src="assets/images/client_1.jpg" alt="Client Photo" class="client-photo">
                     <div class="stars">★★★★★</div>
-                    <p class="quote-text">"Artline Studio was the best decision for our wedding! The team was so
-                        professional and the photos look straight out of a magazine. Highly recommended!"</p>
-                    <div class="client-name">Priya & Rahul</div>
-                    <div class="client-type">Wedding Shoot</div>
+                    <p class="quote-text">"Artline Studio captured our tractor shoot perfectly! The rustic vibe and the
+                        candid moments were exactly what we wanted. The team is super creative!"</p>
+                    <div class="client-name">Rohan & Simran</div>
+                    <div class="client-type">Pre-Wedding Shoot</div>
                 </div>
                 <!-- Review 2 -->
                 <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.1s;">
+                    <img src="assets/images/client_2.jpg" alt="Client Photo" class="client-photo">
                     <div class="stars">★★★★★</div>
-                    <p class="quote-text">"They made us feel so comfortable during our pre-wedding shoot. The video edit
-                        was cinematic and emotional. We cried watching it!"</p>
-                    <div class="client-name">Sneha & Amit</div>
-                    <div class="client-type">Pre-Wedding Film</div>
+                    <p class="quote-text">"Our bridal portraits are stunning. The attention to detail in the jewelry
+                        shots and the lighting was impeccable. Felt like a queen!"</p>
+                    <div class="client-name">Anjali Verma</div>
+                    <div class="client-type">Bride</div>
                 </div>
                 <!-- Review 3 -->
                 <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <img src="assets/images/client_3.jpg" alt="Client Photo" class="client-photo">
                     <div class="stars">★★★★★</div>
-                    <p class="quote-text">"Amazing quality and timely delivery. The team captured candid moments we
-                        didn't even notice happening. Truly magical work."</p>
-                    <div class="client-name">Vikram Singh</div>
-                    <div class="client-type">Event Coverage</div>
+                    <p class="quote-text">"The Haldi ceremony photos are so vibrant and full of life. They didn't just
+                        take photos, they captured the joy of our families."</p>
+                    <div class="client-name">Priya & Kunal</div>
+                    <div class="client-type">Wedding Ceremony</div>
+                </div>
+                <!-- Review 4 -->
+                <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.3s;">
+                    <img src="assets/images/client_4.jpg" alt="Client Photo" class="client-photo">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote-text">"We loved the outdoor couple shoot. The team made us feel so comfortable and
+                        the 'Bollywood style' poses turned out amazing!"</p>
+                    <div class="client-name">Amit & Neha</div>
+                    <div class="client-type">Couple Shoot</div>
+                </div>
+                <!-- Review 5 -->
+                <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.4s;">
+                    <img src="assets/images/client_5.jpg" alt="Client Photo" class="client-photo">
+                    <div class="stars">★★★★★</div>
+                    <p class="quote-text">"Professional, punctual, and passionate. The entire wedding film is a
+                        masterpiece we will cherish forever. Thank you Artline!"</p>
+                    <div class="client-name">Raj & Meera</div>
+                    <div class="client-type">Wedding Film</div>
                 </div>
             </div>
         </div>
@@ -1392,7 +1442,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-logo">Artline Studio</div>
+            <div class="footer-logo">Art<span class="red-letter">l</span>ine Studio</div>
             <div class="social-links">
                 <a href="https://www.instagram.com/artlinestudio.in" target="_blank" class="social-icon"
                     aria-label="Instagram">
