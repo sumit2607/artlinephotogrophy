@@ -247,8 +247,8 @@
         }
 
         .logo img {
-            height: 50px;
-            /* Adjust height as needed */
+            height: 80px;
+            /* Adjusted for new logo */
             width: auto;
             object-fit: contain;
         }
@@ -372,13 +372,11 @@
             max-width: 800px;
         }
 
-        .hero-title {
-            font-size: clamp(3rem, 8vw, 6rem);
-            line-height: 1.1;
-            margin-bottom: 1rem;
-            background: linear-gradient(to right, var(--gold-light), var(--gold));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .hero-logo {
+            max-width: 500px;
+            width: 100%;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.5));
             opacity: 0;
             transform: translateY(30px);
             animation: fadeInUp 1s forwards 0.5s;
@@ -398,11 +396,13 @@
         }
 
         .hero-desc {
-            font-size: 1.1rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            font-weight: 600;
             margin-bottom: 2.5rem;
-            color: #e0e0e0;
-            /* Light text for dark bg */
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
             opacity: 0;
             transform: translateY(30px);
             animation: fadeInUp 1s forwards 1.1s;
@@ -1126,7 +1126,7 @@
         <div class="container">
             <nav>
                 <div class="logo">
-                    <img src="assets/images/logo_banner.jpg" alt="Artline Studio Logo">
+                    <img src="assets/images/logo_hero.png" alt="Artline Studio Logo">
                 </div>
                 <div class="menu-toggle" id="mobile-menu">
                     <span class="bar"></span>
@@ -1154,7 +1154,7 @@
             <div class="hero-slide" style="background-image: url('assets/images/hero_4.jpg')"></div>
         </div>
         <div class="hero-content">
-            <h1 class="hero-title">Art<span class="red-letter">l</span>ine Studio</h1>
+            <img src="assets/images/logo_hero.png" alt="Artline Studio Logo" class="hero-logo">
             <h2 class="hero-subtitle">Premium Photography & Cinematography</h2>
             <p class="hero-desc">Your Story. Captured Beautifully.</p>
             <div class="hero-buttons">
