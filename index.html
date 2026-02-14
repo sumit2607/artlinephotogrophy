@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artline Studio | Premium Wedding Photography & Cinematography</title>
-    <meta name="description" content="Artline Studio specializes in luxury wedding photography, candid moments, and cinematic films. Based in India, capturing timeless emotions worldwide.">
-    
+    <meta name="description"
+        content="Artline Studio specializes in luxury wedding photography, candid moments, and cinematic films. Based in India, capturing timeless emotions worldwide.">
+
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Artline Studio - Premium Photography">
-    <meta property="og:description" content="Luxury wedding photography and cinematic films. We capture emotions, stories, and timeless frames.">
+    <meta property="og:description"
+        content="Luxury wedding photography and cinematic films. We capture emotions, stories, and timeless frames.">
     <meta property="og:image" content="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1200">
     <meta property="og:type" content="website">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -77,8 +82,11 @@
         body::before {
             content: "";
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: 
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background:
                 radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.03), transparent 25%),
                 radial-gradient(circle at 85% 30%, rgba(212, 175, 55, 0.03), transparent 25%);
             pointer-events: none;
@@ -86,13 +94,16 @@
         }
 
         /* Typography */
-        h1, h2, h3, h4 {
+        h1,
+        h2,
+        h3,
+        h4 {
             font-family: var(--font-heading);
             font-weight: 400;
             color: var(--text-main);
             letter-spacing: -0.02em;
         }
-        
+
         .accent-text {
             color: var(--gold);
         }
@@ -242,7 +253,8 @@
             opacity: 0.8;
         }
 
-        .nav-links a:hover, .nav-links a.active {
+        .nav-links a:hover,
+        .nav-links a.active {
             opacity: 1;
             color: var(--gold);
         }
@@ -258,7 +270,8 @@
             transition: var(--transition);
         }
 
-        .nav-links a:hover::after, .nav-links a.active::after {
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
             width: 100%;
         }
 
@@ -289,7 +302,10 @@
 
         .hero-bg {
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background-image: url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
@@ -300,8 +316,13 @@
         }
 
         @keyframes slowZoom {
-            from { transform: scale(1); }
-            to { transform: scale(1.1); }
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.1);
+            }
         }
 
         .hero-content {
@@ -407,7 +428,7 @@
         .feature-card:hover {
             transform: translateY(-10px);
             border-color: var(--border-color);
-            box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
         }
 
         .feature-card h3 {
@@ -431,7 +452,7 @@
             background: linear-gradient(145deg, #151515, #111);
             padding: 2.5rem;
             border-radius: 4px;
-            border: 1px solid rgba(255,255,255,0.03);
+            border: 1px solid rgba(255, 255, 255, 0.03);
             transition: var(--transition);
             position: relative;
             overflow: hidden;
@@ -443,7 +464,10 @@
         .service-card::before {
             content: '';
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 3px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
             background: var(--gold);
             transform: scaleX(0);
             transform-origin: left;
@@ -502,15 +526,19 @@
             position: relative;
         }
 
-        .filter-btn.active, .filter-btn:hover {
+        .filter-btn.active,
+        .filter-btn:hover {
             color: var(--gold);
         }
 
         .filter-btn.active::after {
             content: '';
             position: absolute;
-            bottom: 0; left: 50%; transform: translateX(-50%);
-            width: 20px; height: 1px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 20px;
+            height: 1px;
             background-color: var(--gold);
         }
 
@@ -537,8 +565,11 @@
 
         .gallery-overlay {
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.6);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -579,7 +610,8 @@
 
         .gallery-wrapper {
             position: relative;
-            min-height: 400px; /* prevent collapse during filter */
+            min-height: 400px;
+            /* prevent collapse during filter */
         }
 
         .quote-wrapper {
@@ -590,8 +622,8 @@
         /* --- TESTIMONIALS --- */
         #testimonials {
             background-color: var(--bg-card);
-            border-top: 1px solid rgba(255,255,255,0.03);
-            border-bottom: 1px solid rgba(255,255,255,0.03);
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.03);
         }
 
         .testimonials-grid {
@@ -603,7 +635,7 @@
         .testimonial-card {
             background: var(--bg-dark);
             padding: 2.5rem;
-            border: 1px solid rgba(255,255,255,0.03);
+            border: 1px solid rgba(255, 255, 255, 0.03);
             position: relative;
         }
 
@@ -670,7 +702,7 @@
         .contact-form {
             background: var(--bg-card);
             padding: 3rem;
-            border: 1px solid rgba(255,255,255,0.03);
+            border: 1px solid rgba(255, 255, 255, 0.03);
         }
 
         .form-group {
@@ -713,7 +745,7 @@
             padding: 3rem 0;
             background-color: #050505;
             text-align: center;
-            border-top: 1px solid rgba(255,255,255,0.05);
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         .footer-logo {
@@ -735,7 +767,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background: rgba(255,255,255,0.05);
+            background: rgba(255, 255, 255, 0.05);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -764,8 +796,11 @@
         /* --- MODAL LIGHTBOX --- */
         .lightbox {
             position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(0,0,0,0.95);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
             z-index: 2000;
             display: flex;
             justify-content: center;
@@ -789,7 +824,7 @@
         .lightbox-img {
             max-height: 85vh;
             max-width: 100%;
-            box-shadow: 0 0 50px rgba(0,0,0,0.8);
+            box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
             border: 2px solid var(--gold);
         }
 
@@ -838,9 +873,17 @@
         }
 
         @keyframes pulse {
-            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
-            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
         }
 
         /* --- ANIMATION CLASSES --- */
@@ -850,9 +893,11 @@
                 transform: translateY(0);
             }
         }
-        
+
         @keyframes fadeIn {
-            to { opacity: 1; }
+            to {
+                opacity: 1;
+            }
         }
 
         .animate-on-scroll {
@@ -867,37 +912,142 @@
         }
 
         /* --- RESPONSIVE --- */
+        /* --- RESPONSIVE --- */
         @media (max-width: 900px) {
-            :root { --section-spacing: 80px; }
-            .hero-title { font-size: 3.5rem; }
-            .gallery-grid { column-count: 2; }
-            .contact-container { grid-template-columns: 1fr; }
-            
-            .menu-toggle { display: flex; }
+            :root {
+                --section-spacing: 80px;
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+            }
+
+            .gallery-grid {
+                column-count: 2;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
             .nav-links {
                 position: fixed;
                 top: 70px;
                 right: -100%;
-                background: #111;
+                background: rgba(10, 10, 10, 0.98);
+                backdrop-filter: blur(15px);
                 flex-direction: column;
                 width: 100%;
+                height: calc(100vh - 70px);
                 text-align: center;
-                padding: 2rem 0;
-                transition: 0.3s ease-in-out;
-                box-shadow: 0 10px 15px rgba(0,0,0,0.5);
+                padding-top: 4rem;
+                transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: none;
             }
-            .nav-links.active { right: 0; }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .nav-links li {
+                margin: 1.5rem 0;
+            }
+
+            .nav-links a {
+                font-size: 1.2rem;
+            }
         }
 
         @media (max-width: 600px) {
-            .hero-title { font-size: 2.5rem; }
-            .gallery-grid { column-count: 1; }
-            .section-title h2 { font-size: 2rem; }
-            .btn { width: 100%; margin-bottom: 0.5rem; }
-            .hero-buttons { gap: 0.5rem; flex-direction: column; width: 100%; }
+            :root {
+                --section-spacing: 60px;
+            }
+
+            .container {
+                width: 92%;
+                padding: 0 0.5rem;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+                line-height: 1.2;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 1rem;
+            }
+
+            .hero-desc {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            .section-title p {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+
+            .gallery-grid {
+                column-count: 1;
+            }
+
+            .btn {
+                width: 100%;
+                margin-bottom: 0.8rem;
+                padding: 1.2rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                gap: 0.5rem;
+            }
+
+            .form-control {
+                font-size: 16px;
+                /* Prevents iOS zoom */
+                padding: 1.2rem;
+            }
+
+            .contact-form {
+                padding: 1.5rem;
+            }
+
+            /* Better Touch Targets */
+            .filter-btn {
+                padding: 0.8rem 1.2rem;
+                margin-bottom: 0.5rem;
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 4px;
+            }
+
+            .filter-btn.active {
+                border-color: var(--gold);
+            }
+
+            .filter-btn.active::after {
+                display: none;
+            }
+
+            .floating-wa {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+            }
         }
     </style>
 </head>
+
 <body>
 
     <!-- Header -->
@@ -950,7 +1100,10 @@
             </div>
             <div class="about-content animate-on-scroll">
                 <p class="about-text">
-                    At Artline Studio, we believe that photography is more than just clicking pictures—it's about freezing moments that speak to the soul. With a passion for storytelling and an eye for luxury aesthetics, our team dedicates itself to crafting visual masterpieces. We blend candid emotions with cinematic grandeur to deliver memories that are as timeless as your love.
+                    At Artline Studio, we believe that photography is more than just clicking pictures—it's about
+                    freezing moments that speak to the soul. With a passion for storytelling and an eye for luxury
+                    aesthetics, our team dedicates itself to crafting visual masterpieces. We blend candid emotions with
+                    cinematic grandeur to deliver memories that are as timeless as your love.
                 </p>
             </div>
             <div class="features-grid">
@@ -977,22 +1130,27 @@
                 <h2>Our Services</h2>
                 <p>Comprehensive packages tailored for your special occasions.</p>
             </div>
-            
+
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card animate-on-scroll">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z">
+                        </path>
                         <circle cx="12" cy="13" r="4"></circle>
                     </svg>
                     <h3>Wedding Photography</h3>
                     <p>Traditional and contemporary coverage of your big day with expert lighting.</p>
                 </div>
-                
+
                 <!-- Service 2 -->
                 <div class="service-card animate-on-scroll">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z">
+                        </path>
                     </svg>
                     <h3>Pre-Wedding Shoots</h3>
                     <p>Creative couple portraits in scenic locations to tell your love story.</p>
@@ -1000,7 +1158,8 @@
 
                 <!-- Service 3 -->
                 <div class="service-card animate-on-scroll">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
                         <line x1="7" y1="2" x2="7" y2="22"></line>
                         <line x1="17" y1="2" x2="17" y2="22"></line>
@@ -1016,7 +1175,8 @@
 
                 <!-- Service 4 -->
                 <div class="service-card animate-on-scroll">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                         <line x1="14.31" y1="8" x2="20.05" y2="17.94"></line>
                         <line x1="9.69" y1="8" x2="21.17" y2="8"></line>
@@ -1028,10 +1188,11 @@
                     <h3>Engagement & Couple</h3>
                     <p>Capturing the intimate moments of togetherness before the big celebration.</p>
                 </div>
-                
+
                 <!-- Service 5 -->
                 <div class="service-card animate-on-scroll">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                     </svg>
@@ -1041,7 +1202,8 @@
 
                 <!-- Service 6 -->
                 <div class="service-card animate-on-scroll">
-                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
                     </svg>
                     <h3>Drone & Aerial</h3>
@@ -1090,21 +1252,24 @@
                 <!-- Review 1 -->
                 <div class="testimonial-card animate-on-scroll">
                     <div class="stars">★★★★★</div>
-                    <p class="quote-text">"Artline Studio was the best decision for our wedding! The team was so professional and the photos look straight out of a magazine. Highly recommended!"</p>
+                    <p class="quote-text">"Artline Studio was the best decision for our wedding! The team was so
+                        professional and the photos look straight out of a magazine. Highly recommended!"</p>
                     <div class="client-name">Priya & Rahul</div>
                     <div class="client-type">Wedding Shoot</div>
                 </div>
                 <!-- Review 2 -->
                 <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.1s;">
                     <div class="stars">★★★★★</div>
-                    <p class="quote-text">"They made us feel so comfortable during our pre-wedding shoot. The video edit was cinematic and emotional. We cried watching it!"</p>
+                    <p class="quote-text">"They made us feel so comfortable during our pre-wedding shoot. The video edit
+                        was cinematic and emotional. We cried watching it!"</p>
                     <div class="client-name">Sneha & Amit</div>
                     <div class="client-type">Pre-Wedding Film</div>
                 </div>
                 <!-- Review 3 -->
                 <div class="testimonial-card animate-on-scroll" style="transition-delay: 0.2s;">
                     <div class="stars">★★★★★</div>
-                    <p class="quote-text">"Amazing quality and timely delivery. The team captured candid moments we didn't even notice happening. Truly magical work."</p>
+                    <p class="quote-text">"Amazing quality and timely delivery. The team captured candid moments we
+                        didn't even notice happening. Truly magical work."</p>
                     <div class="client-name">Vikram Singh</div>
                     <div class="client-type">Event Coverage</div>
                 </div>
@@ -1159,9 +1324,11 @@
                         </div>
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea id="message" class="form-control" placeholder="Tell us about your dates and requirements..."></textarea>
+                            <textarea id="message" class="form-control"
+                                placeholder="Tell us about your dates and requirements..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request via WhatsApp</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request via
+                            WhatsApp</button>
                     </form>
                 </div>
             </div>
@@ -1174,13 +1341,24 @@
             <div class="footer-logo">Artline Studio</div>
             <div class="social-links">
                 <a href="#" class="social-icon" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    <svg viewBox="0 0 24 24">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
                 </a>
                 <a href="#" class="social-icon" aria-label="Facebook">
-                    <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    <svg viewBox="0 0 24 24">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
                 </a>
                 <a href="#" class="social-icon" aria-label="YouTube">
-                    <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+                    <svg viewBox="0 0 24 24">
+                        <path
+                            d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z">
+                        </path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                    </svg>
                 </a>
             </div>
             <p class="copyright">&copy; 2024 Artline Studio. All rights reserved.</p>
@@ -1190,7 +1368,9 @@
     <!-- Floating WhatsApp -->
     <a href="javascript:void(0)" onclick="openWhatsApp()" class="floating-wa" title="Chat on WhatsApp">
         <svg viewBox="0 0 24 24">
-            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+            <path
+                d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z">
+            </path>
         </svg>
     </a>
 
@@ -1218,11 +1398,11 @@
 
         // --- RENDER GALLERY ---
         const galleryGrid = document.getElementById('gallery-grid');
-        
+
         function renderGallery(filter = 'all') {
             galleryGrid.innerHTML = '';
-            const filtered = filter === 'all' 
-                ? galleryImages 
+            const filtered = filter === 'all'
+                ? galleryImages
                 : galleryImages.filter(img => img.cat === filter);
 
             filtered.forEach(item => {
@@ -1238,9 +1418,9 @@
                 div.onclick = () => openLightbox(item.src);
                 galleryGrid.appendChild(div);
             });
-            
+
             // Re-trigger observer for new elements
-            observeElements(); 
+            observeElements();
         }
 
         renderGallery();
@@ -1288,7 +1468,7 @@
         // Mobile Menu
         const mobileMenu = document.getElementById('mobile-menu');
         const navLinks = document.querySelector('.nav-links');
-        
+
         mobileMenu.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
@@ -1332,13 +1512,13 @@
         // --- FORM SUBMIT -> WHATSAPP ---
         document.getElementById('bookingForm').addEventListener('submit', (e) => {
             e.preventDefault();
-            
+
             const name = document.getElementById('name').value;
             const eventType = document.getElementById('eventType').value;
             const userMessage = document.getElementById('message').value;
 
             const finalMessage = `Hi Artline Studio, I want to book a shoot.\n\nName: ${name}\nEvent: ${eventType}\nNote: ${userMessage}\n\nPlease get back to me.`;
-            
+
             const url = `https://wa.me/${waNumber}?text=${encodeURIComponent(finalMessage)}`;
             window.open(url, '_blank');
 
@@ -1349,4 +1529,5 @@
 
     </script>
 </body>
+
 </html>
