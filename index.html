@@ -321,15 +321,26 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: #1a1a1a;
-            /* Fallback color */
-            background-image: url('https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=1600');
+            z-index: -2;
+        }
+
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             background-size: cover;
             background-position: center;
-            z-index: -2;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
             filter: brightness(0.4) contrast(1.1);
             transform: scale(1.05);
             animation: slowZoom 20s infinite alternate;
+        }
+
+        .hero-slide.active {
+            opacity: 1;
         }
 
         @keyframes slowZoom {
@@ -1107,7 +1118,12 @@
 
     <!-- Hero -->
     <section id="hero">
-        <div class="hero-bg"></div>
+        <div class="hero-bg">
+            <div class="hero-slide active" style="background-image: url('assets/images/hero_1.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('assets/images/hero_2.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('assets/images/hero_3.jpg')"></div>
+            <div class="hero-slide" style="background-image: url('assets/images/hero_4.jpg')"></div>
+        </div>
         <div class="hero-content">
             <h1 class="hero-title">Artline Studio</h1>
             <h2 class="hero-subtitle">Premium Photography & Cinematography</h2>
@@ -1585,6 +1601,20 @@
             e.target.reset();
             alert("Thanks! Redirecting you to WhatsApp to complete your inquiry.");
         });
+
+        // --- HERO CAROUSEL ---
+        function initHeroCarousel() {
+            const slides = document.querySelectorAll('.hero-slide');
+            let currentSlide = 0;
+
+            setInterval(() => {
+                slides[currentSlide].classList.remove('active');
+                currentSlide = (currentSlide + 1) % slides.length;
+                slides[currentSlide].classList.add('active');
+            }, 5000); // Change every 5 seconds
+        }
+
+        initHeroCarousel();
 
     </script>
 </body>
