@@ -382,6 +382,21 @@
             animation: fadeInUp 1s forwards 0.5s;
         }
 
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: clamp(3rem, 8vw, 6rem);
+            font-weight: 700;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards 0.5s;
+            line-height: 1.1;
+        }
+
         .hero-subtitle {
             font-size: clamp(1.2rem, 3vw, 2rem);
             font-family: var(--font-heading);
@@ -1154,7 +1169,7 @@
             <div class="hero-slide" style="background-image: url('assets/images/hero_4.jpg')"></div>
         </div>
         <div class="hero-content">
-            <img src="assets/images/logo_hero.png" alt="Artline Studio Logo" class="hero-logo">
+            <h1 class="hero-title">Artline Studio</h1>
             <h2 class="hero-subtitle">Premium Photography & Cinematography</h2>
             <p class="hero-desc">Your Story. Captured Beautifully.</p>
             <div class="hero-buttons">
